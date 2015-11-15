@@ -3,8 +3,8 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=HARDWARE_interface
 PKG_VERSION:=2015-10-03
 PKG_RELEASE:=1
-PKG_SOURCE_PROTO:=svn
-PKG_SOURCE_URL:=http://svn.code.sf.net/p/atomproducts/svn/trunk/src/HARDWARE_interface
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_URL:=https://github.com/AtlantsEmbedded/feed-atlants-HARDWARE_interface.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE_VERSION:=HEAD
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz

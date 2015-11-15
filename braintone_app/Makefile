@@ -3,8 +3,8 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=braintone_app
 PKG_VERSION:=2015-11-06
 PKG_RELEASE:=1
-PKG_SOURCE_PROTO:=svn
-PKG_SOURCE_URL:=http://svn.code.sf.net/p/atomproducts/svn/trunk/src/braintone_app
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_URL:=https://github.com/AtlantsEmbedded/feed-atlants-braintone_app.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE_VERSION:=HEAD
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz

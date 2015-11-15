@@ -3,8 +3,8 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=DATA_interface
 PKG_VERSION:=2015-08-12
 PKG_RELEASE:=1
-PKG_SOURCE_PROTO:=svn
-PKG_SOURCE_URL:=http://svn.code.sf.net/p/atomproducts/svn/trunk/src/DATA_interface
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_URL:=https://github.com/AtlantsEmbedded/DATA_interface.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE_VERSION:=HEAD
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
