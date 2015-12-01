@@ -16,7 +16,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/GPIO_interface
 	SECTION:=Interfaces
-	CATEGORY:=Atom
+	CATEGORY:=Atlants
 	TITLE:=GPIO_interface
 	SUBMENU:=Interfaces
 	DEPENDS:=libpthread +libezxml +glib2 wiringPi

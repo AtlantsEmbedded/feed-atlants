@@ -15,7 +15,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/mindbx_testbench
 	SECTION:=Interfaces
-	CATEGORY:=Atom
+	CATEGORY:=Atlants	
 	TITLE:=mindbx_testbench
 	SUBMENU:=Interfaces
 	DEPENDS:=wiringPi +libpthread +libezxml +glib2
@@ -26,9 +26,9 @@ define Package/mindbx_testbench/description
 endef
 
 define Package/mindbx_testbench/install
-	$(INSTALL_DIR) $(1)/atom
-	$(INSTALL_DIR) $(1)/atom/gpio
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/mindbx_testbench $(1)/atom/gpio
+	$(INSTALL_DIR) $(1)/intelli
+	$(INSTALL_DIR) $(1)/intelli/gpio
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/mindbx_testbench $(1)/intelli/gpio
 endef
 
 $(eval $(call BuildPackage,mindbx_testbench))

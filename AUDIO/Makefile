@@ -15,7 +15,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/AUDIO
 	SECTION:=Interfaces
-	CATEGORY:=Atom
+	CATEGORY:=Atlants
 	TITLE:=AUDIO
 	SUBMENU:=Interfaces
 	DEPENDS:=wiringPi
@@ -26,10 +26,10 @@ define Package/AUDIO/description
 endef
 
 define Package/AUDIO/install
-	$(INSTALL_DIR) $(1)/atom
-	$(INSTALL_DIR) $(1)/atom/data
-	$(INSTALL_DIR) $(1)/atom/data/config
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/audio $(1)/atom/
+	$(INSTALL_DIR) $(1)/intelli
+	$(INSTALL_DIR) $(1)/intelli/data
+	$(INSTALL_DIR) $(1)/intelli/data/config
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/audio $(1)/intelli/
 endef
 
 $(eval $(call BuildPackage,AUDIO))

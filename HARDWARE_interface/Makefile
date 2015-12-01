@@ -15,7 +15,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/HARDWARE_interface
 	SECTION:=Interfaces
-	CATEGORY:=Atom
+	CATEGORY:=Atlants
 	TITLE:=HARDWARE_interface
 	SUBMENU:=Interfaces
 	DEPENDS:=+wiringPi +libpthread +libezxml +glib2 +bluez-libs
@@ -27,11 +27,11 @@ define Package/HARDWARE_interface/description
 endef
 
 define Package/HARDWARE_interface/install
-	$(INSTALL_DIR) $(1)/atom
-	$(INSTALL_DIR) $(1)/atom/data
-	$(INSTALL_DIR) $(1)/atom/data/config
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/hardware-daemon/config/data_config.xml $(1)/atom/data/config
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/hardware-daemon/hardware_interface $(1)/atom/data
+	$(INSTALL_DIR) $(1)/intelli
+	$(INSTALL_DIR) $(1)/intelli/data
+	$(INSTALL_DIR) $(1)/intelli/data/config
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/hardware-daemon/config/data_config.xml $(1)/intelli/data/config
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/hardware-daemon/hardware_interface $(1)/intelli/data
 	$(INSTALL_DIR) $(1)/etc
 	$(INSTALL_DIR) $(1)/etc/init.d/
 endef

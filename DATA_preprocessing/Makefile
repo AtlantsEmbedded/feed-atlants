@@ -15,7 +15,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/DATA_preprocessing
 	SECTION:=Analysis
-	CATEGORY:=Atom
+	CATEGORY:=Atlants
 	TITLE:=DATA_preprocessing
 	SUBMENU:=preprocessing
 	DEPENDS:=+libpthread +libezxml +glib2 +wiringPi
@@ -27,11 +27,11 @@ define Package/DATA_preprocessing/description
 endef
 
 define Package/DATA_preprocessing/install
-	$(INSTALL_DIR) $(1)/atom
-	$(INSTALL_DIR) $(1)/atom/data
-	$(INSTALL_DIR) $(1)/atom/data/config
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/preprocess-daemon/data_preprocessing $(1)/atom/data
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/preprocess-daemon/config/* $(1)/atom/data/config
+	$(INSTALL_DIR) $(1)/intelli
+	$(INSTALL_DIR) $(1)/intelli/data
+	$(INSTALL_DIR) $(1)/intelli/data/config
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/preprocess-daemon/data_preprocessing $(1)/intelli/data
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/preprocess-daemon/config/* $(1)/intelli/data/config
 	$(INSTALL_DIR) $(1)/etc
 	$(INSTALL_DIR) $(1)/etc/init.d/
 endef

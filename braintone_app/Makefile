@@ -15,7 +15,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/braintone_app
 	SECTION:=Applications
-	CATEGORY:=Atom
+	CATEGORY:=Atlants
 	TITLE:=braintone_app
 	SUBMENU:=Interfaces
 	DEPENDS:=wiringPi +librt +libpthread +libezxml +glib2
@@ -26,11 +26,11 @@ define Package/braintone_app/description
 endef
 
 define Package/braintone_app/install
-	$(INSTALL_DIR) $(1)/atom
-	$(INSTALL_DIR) $(1)/atom/app
-	$(INSTALL_DIR) $(1)/atom/app/config
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/braintone_app $(1)/atom/app
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/config/braintone_app_config.xml $(1)/atom/app/config
+	$(INSTALL_DIR) $(1)/intelli
+	$(INSTALL_DIR) $(1)/intelli/app
+	$(INSTALL_DIR) $(1)/intelli/app/config
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/braintone_app $(1)/intelli/app
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/config/braintone_app_config.xml $(1)/intelli/app/config
 endef
 
 $(eval $(call BuildPackage,braintone_app))
