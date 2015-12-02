@@ -15,7 +15,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/MAPLEPI_interface
 	SECTION:=system
-	CATEGORY:=Atom
+	CATEGORY:=Atlants
 	SUBMENU:=Interfaces
 	TITLE:=MAPLEPI_interface
 	DEPENDS:=wiringPi

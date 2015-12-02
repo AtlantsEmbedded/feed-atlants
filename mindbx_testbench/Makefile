@@ -15,7 +15,7 @@ include $(INCLUDE_DIR)/package.mk
 
 define Package/mindbx_testbench
 	SECTION:=Interfaces
-	CATEGORY:=Atlants	
+	CATEGORY:=Atlants
 	TITLE:=mindbx_testbench
 	SUBMENU:=Interfaces
 	DEPENDS:=wiringPi +libpthread +libezxml +glib2

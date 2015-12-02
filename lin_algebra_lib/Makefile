@@ -14,8 +14,9 @@ PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 include $(INCLUDE_DIR)/package.mk
 
 define Package/lin_algebra_lib
-	SECTION:=libs
-	CATEGORY:=Libraries
+	SECTION:=Libraries
+	CATEGORY:=Atlants
+	SUBMENU:=Libraries
 	TITLE:=lin_algebra_lib
 	DEPENDS:=+librt
 endef
