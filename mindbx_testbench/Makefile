@@ -14,10 +14,10 @@ PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 include $(INCLUDE_DIR)/package.mk
 
 define Package/mindbx_testbench
-	SECTION:=Interfaces
+	SECTION:=Applications
 	CATEGORY:=Atlants
 	TITLE:=mindbx_testbench
-	SUBMENU:=Interfaces
+	SUBMENU:=Applications
 	DEPENDS:=wiringPi +libpthread +libezxml +glib2
 endef
 

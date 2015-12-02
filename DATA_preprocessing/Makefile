@@ -14,10 +14,10 @@ PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 include $(INCLUDE_DIR)/package.mk
 
 define Package/DATA_preprocessing
-	SECTION:=Analysis
+	SECTION:=Preprocessing
 	CATEGORY:=Atlants
 	TITLE:=DATA_preprocessing
-	SUBMENU:=preprocessing
+	SUBMENU:=Preprocessing
 	DEPENDS:=+libpthread +libezxml +glib2 +wiringPi
 endef
 

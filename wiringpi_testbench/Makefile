@@ -14,10 +14,10 @@ PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 include $(INCLUDE_DIR)/package.mk
 
 define Package/wiringpi_testbench
-	SECTION:=Interfaces
+	SECTION:=Applications
 	CATEGORY:=Atlants
 	TITLE:=wiringpi_testbench
-	SUBMENU:=Interfaces
+	SUBMENU:=Applications
 	DEPENDS:=wiringPi +libpthread +libezxml +glib2
 endef
 

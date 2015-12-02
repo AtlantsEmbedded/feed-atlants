@@ -14,7 +14,7 @@ PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)
 include $(INCLUDE_DIR)/package.mk
 
 define Package/MAPLEPI_interface
-	SECTION:=system
+	SECTION:=Interfaces
 	CATEGORY:=Atlants
 	SUBMENU:=Interfaces
 	TITLE:=MAPLEPI_interface

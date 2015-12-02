@@ -17,7 +17,7 @@ define Package/mindbx_app
 	SECTION:=Applications
 	CATEGORY:=Atlants
 	TITLE:=mindbx_app
-	SUBMENU:=Interfaces
+	SUBMENU:=Applications
 	DEPENDS:=wiringPi +librt +libpthread +libezxml +glib2
 endef
 
