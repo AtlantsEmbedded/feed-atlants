@@ -18,7 +18,7 @@ define Package/DATA_interface
 	CATEGORY:=Atlants
 	TITLE:=DATA_interface
 	SUBMENU:=Interfaces
-	DEPENDS:=+wiringPi +libpthread +libezxml +glib2 +bluez-clone
+	DEPENDS:=+wiringPi +libpthread +libezxml +glib2 +bluez-libs
 endef
 
 define Package/DATA_interface/description
