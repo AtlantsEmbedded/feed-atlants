@@ -30,7 +30,7 @@ define Package/stats_lib/install
 	$(INSTALL_DIR) $(1)/usr/lib
 	$(INSTALL_DIR) $(1)/usr/include
 	cp $(PKG_BUILD_DIR)/*.so* $(1)/usr/lib/
-	cp $(PKG_BUILD_DIR)/*.h $(1)/usr/include/
+	cp $(PKG_BUILD_DIR)/include/*.h $(1)/usr/include/
 endef
 
 define Build/InstallDev
