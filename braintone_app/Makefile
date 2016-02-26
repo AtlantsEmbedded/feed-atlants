@@ -18,7 +18,7 @@ define Package/braintone_app
 	CATEGORY:=Atlants
 	TITLE:=braintone_app
 	SUBMENU:=Applications
-	DEPENDS:=wiringPi +librt +libpthread +libezxml +glib2
+	DEPENDS:=wiringPi +librt +libpthread +libezxml +glib2 +lib_buzzer
 endef
 
 define Package/braintone_app/description
