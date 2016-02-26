@@ -39,4 +39,4 @@ define Build/InstallDev
 	cp $(PKG_BUILD_DIR)/include/*.h $(STAGING_DIR)/usr/include/
 endef
 
-$(eval $(call BuildPackage,lin_algebra_lib))
+$(eval $(call BuildPackage,buzzer_lib))
