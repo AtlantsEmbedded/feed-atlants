@@ -38,7 +38,7 @@ define Build/InstallDev
 	$(INSTALL_DIR) $(STAGING_DIR)/usr/include/
 	$(INSTALL_DIR) $(STAGING_DIR)/usr/lib
 	cp $(PKG_BUILD_DIR)/*.so* $(STAGING_DIR)/usr/lib/
-	cp $(PKG_BUILD_DIR)/*.h $(STAGING_DIR)/usr/include/
+	cp $(PKG_BUILD_DIR)/include/*.h $(STAGING_DIR)/usr/include/
 
 endef
 
