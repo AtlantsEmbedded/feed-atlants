@@ -18,7 +18,7 @@ define Package/DATA_preprocessing
 	CATEGORY:=Atlants
 	TITLE:=DATA_preprocessing
 	SUBMENU:=Preprocessing
-	DEPENDS:=+libpthread +libezxml +glib2 +wiringPi
+	DEPENDS:=+libpthread +libezxml +glib2 +wiringPi +io_csv_lib
 endef
 
 define Package/DATA_preprocessing/description
