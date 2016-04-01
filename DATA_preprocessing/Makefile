@@ -2,7 +2,7 @@
 ### Created by : AtlantsEmbedded technical wing
 ### website    : http://www.atlantsembedded.com/
 ### email      : josephvalex@gmail.com
-### Description: GNU Makefile for DATA_preprocessing 
+### Description: OpenWRT Makefile for DATA_preprocessing 
 ###############################################################
 
 include $(TOPDIR)/rules.mk
