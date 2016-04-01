@@ -1,7 +1,14 @@
+################################################################
+### Created by : AtlantsEmbedded technical wing
+### website    : http://www.atlantsembedded.com/
+### email      : josephvalex@gmail.com
+### Description: GNU Makefile for DATA_preprocessing 
+###############################################################
+
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=DATA_preprocessing
-PKG_VERSION:=2015-08-12
+PKG_VERSION:=2016-06-31
 PKG_RELEASE:=1
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/AtlantsEmbedded/atlants-DATA_preprocessing.git
@@ -18,7 +25,7 @@ define Package/DATA_preprocessing
 	CATEGORY:=Atlants
 	TITLE:=DATA_preprocessing
 	SUBMENU:=Preprocessing
-	DEPENDS:=+libpthread +libezxml +glib2 +wiringPi +io_csv_lib
+	DEPENDS:=+libpthread +libezxml +glib2 +wiringPi +io_csv_lib +signal_proc_lib
 endef
 
 define Package/DATA_preprocessing/description
