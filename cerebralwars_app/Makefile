@@ -18,7 +18,7 @@ define Package/cerebralwars_app
 	CATEGORY:=Atlants
 	TITLE:=cerebralwars_app
 	SUBMENU:=Applications
-	DEPENDS:=wiringPi +librt +libpthread +libezxml +glib2
+	DEPENDS:=+wiringPi +librt +libpthread +libezxml +glib2 +buzzer_lib +stats_lib
 endef
 
 define Package/cerebralwars_app/description
@@ -29,7 +29,9 @@ define Package/cerebralwars_app/install
 	$(INSTALL_DIR) $(1)/intelli
 	$(INSTALL_DIR) $(1)/intelli/app
 	$(INSTALL_DIR) $(1)/intelli/app/config
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/cerebralwars_app $(1)/intelli/app
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/cerebral_wars_app $(1)/intelli/app
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/scripts/launch_cerebral_wars.sh $(1)/intelli/
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/config/cerebral_wars_config.xml $(1)/intelli/app/config
 endef
 
 $(eval $(call BuildPackage,cerebralwars_app))
