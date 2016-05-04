@@ -19,7 +19,7 @@ define Package/GPIO_interface
 	CATEGORY:=Atlants
 	TITLE:=GPIO_interface
 	SUBMENU:=Interfaces
-	DEPENDS:=libpthread +libezxml +glib2 wiringPi
+	DEPENDS:=+librt +libpthread +libezxml +glib2 wiringPi
 endef
 
 define Package/GPIO_interface/description
