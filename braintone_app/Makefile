@@ -32,6 +32,9 @@ define Package/braintone_app/install
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/braintone_app $(1)/intelli/app
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/scripts/launch_braintone.sh $(1)/intelli/
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/config/braintone_app_config.xml $(1)/intelli/app/config
+	$(INSTALL_DIR) $(1)/etc
+	$(INSTALL_DIR) $(1)/etc/init.d
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/scripts/launch_braintone.sh $(1)/etc/init.d
 endef
 
 $(eval $(call BuildPackage,braintone_app))
